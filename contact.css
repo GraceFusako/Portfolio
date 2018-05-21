@@ -21,5 +21,29 @@ li {
 i {
     color: whitesmoke;
     padding: 20px;
-    
+}
+
+.Container {
+    display: flex;
+    overflow: hidden;
+    margin-top: -100px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    will-change: overflow;
+}
+
+/* Overflows text */
+.Left, .Right {
+    overflow: auto;
+    height: auto;
+    padding: 25px;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: whitesmoke;
 }
